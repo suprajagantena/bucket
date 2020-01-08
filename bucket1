@@ -1,0 +1,9 @@
+resource "aws_s3_bucket" "bucket" {
+  bucket = "my-test-bucket38621@123"
+  acl    = "private"
+
+  tags = {
+    Name        = "my-test-bucket38621@123"
+    Environment = "tfstate"
+  }
+}
